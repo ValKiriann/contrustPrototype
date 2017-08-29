@@ -13,6 +13,8 @@ import { NewDetailComponent } from './new-detail/new-detail.component';
 import { PrimaryMenuComponent } from './primary-menu/primary-menu.component';
 import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.component';
 
+import { AlertModule } from 'ngx-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,7 @@ import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.componen
     SecondaryMenuComponent
   ],
   imports: [
+      AlertModule.forRoot(),
     BrowserModule
   ],
   providers: [],
