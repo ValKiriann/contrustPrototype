@@ -1,0 +1,14 @@
+
+.session-container {
+  background: radial-gradient(50% 98%, #407CC9 48%, #153D4C 98%);
+  height: 100vh;
+  color: white;
+}
+
+.session-container .row {
+  margin: 0;
+}
+
+.session-container a {
+  color: white;
+}

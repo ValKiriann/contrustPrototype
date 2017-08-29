@@ -14,6 +14,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { NewDetailComponent } from './new-detail/new-detail.component';
 import { PrimaryMenuComponent } from './primary-menu/primary-menu.component';
 import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.component';
+import { ListBuilderService } from './list-builder.service';
 
 import { AlertModule } from 'ngx-bootstrap';
 
@@ -37,12 +38,14 @@ import { AlertModule } from 'ngx-bootstrap';
     FormsModule,
     RouterModule.forRoot([
       {
-        path: 'session',
-        component: SessionComponent
+        path: 'home',
+        component: HomeComponent
       }
     ])
   ],
-  providers: [],
+  providers: [
+    ListBuilderService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
