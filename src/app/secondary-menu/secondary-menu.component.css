@@ -1,0 +1,36 @@
+.secondaryMenu {
+    height:96px;
+    background-color: #407CC9;
+    padding:23px;
+    font-family: helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: white;
+    vertical-align: middle;
+}
+.secondaryMenu img, .secondaryMenu ul {
+    display: inline-block;
+}
+.secondaryMenu img {
+    padding-right:20px;
+}
+.secondaryMenu ul {
+    list-style: none;
+    border-left: solid 3px #8EBBE2;
+    padding-left:25px;
+    margin-bottom: 0;
+}
+.secondaryMenu ul li {
+    opacity:0.6;
+    display: inline-block;
+    margin: 0 20px;
+}
+.secondaryMenu ul li.selected {
+    opacity: 1;
+}
+a {
+    color:inherit;
+}
+a:hover {
+    text-decoration: none;
+}
