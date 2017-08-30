@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { ListBuilderService } from '../list-builder.service';
 
+import { New } from '../new';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
