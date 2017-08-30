@@ -15,6 +15,7 @@ import { NewDetailComponent } from './new-detail/new-detail.component';
 import { PrimaryMenuComponent } from './primary-menu/primary-menu.component';
 import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.component';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
@@ -35,12 +36,7 @@ import { AlertModule } from 'ngx-bootstrap';
     AlertModule.forRoot(),
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      {
-        path: 'session',
-        component: SessionComponent
-      }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
