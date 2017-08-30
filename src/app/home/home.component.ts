@@ -12,9 +12,13 @@ import { ListBuilderService } from '../list-builder.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  news: New[] = [];
 
-  ngOnInit() {
+  constructor(private listBuilderService: ListBuilderService) { }
+
+  ngOnInit(): void {
+    this.listBuilderService.getNews()
+      .then(news => this.news = news.slice(0, 10));
   }
 
 }
