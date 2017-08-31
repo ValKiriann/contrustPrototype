@@ -1,36 +1,3 @@
-.secondaryMenu {
-  height:96px;
-  background-color: #407CC9;
-  padding:2vw 3vw;
-  font-family: helvetica, sans-serif;
-  font-size: 2.35em;
-  font-weight: 400;
-  color: white;
-  vertical-align: middle;
-}
-.secondaryMenu img, .secondaryMenu ul {
-  display: inline-block;
-}
-.secondaryMenu img {
-  padding-left:3vw;
-}
-.secondaryMenu ul {
-  list-style: none;
-  border-left: solid 3px #8EBBE2;
-  padding-left:25px;
-  margin-bottom: 0;
-  display: inline-block;
-  white-space: nowrap;
-}
-.secondaryMenu ul li {
-  opacity:0.6;
-  display: inline-block;
-  margin: 0 20px;
-  padding: 15px 0;
-}
-.secondaryMenu ul li.selected {
-  opacity: 1;
-}
 a {
   color:inherit;
 }
@@ -64,6 +31,7 @@ a:hover {
   font-size: 2.35em;
   font-weight: 400;
   color: white;
+  vertical-align: middle;
 }
 
 .flex-container ul {
@@ -73,12 +41,17 @@ a:hover {
   margin-bottom: 0;
   display: inline-block;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  vertical-align: middle;
+
 }
 .flex-container ul li {
   opacity:0.6;
   display: inline-block;
   margin: 0 20px;
-  padding: 10px 0;
+  padding: 10px 0 0;
+  vertical-align: middle;
 }
 
 .flex-item:nth-child(1) {

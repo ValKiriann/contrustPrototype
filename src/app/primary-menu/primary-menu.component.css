@@ -31,7 +31,7 @@ a:hover {
   font-weight: 400;
   color: #407CC9;
   vertical-align: middle;
-  box-shadow : 0 2px 5px 0 rgba(0,0,0,0.26);
+  box-shadow : 0 -2px 5px 0 rgba(0,0,0,0.26);
 
 }
 
