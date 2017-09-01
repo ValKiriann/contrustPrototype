@@ -1,3 +1,24 @@
-<p>
-  search works!
-</p>
+<div class="container">
+  <form action="">
+    <div class="row center">
+      <i id="searchICon" class="fa fa-search"></i><input type="text" class="termInput" placeholder="Buscar una noticia">
+    </div>
+    <span for="gps" class="searchLabels">¿Dónde?</span>
+    <div class="row center">
+      <img src="../assets/img/gpsMap.png" alt="" class="center" width="90%">
+    </div>
+    <span class="searchLabels searchLabelsMin">Publicado hace</span>
+    <div class="row flex-container">
+      <input type="radio" name="time" value="1" id="aDay">
+      <label for="aDay" class="searchLabels searchLabelsMin flex-item"><p class="numbers">24</p><p class="nText">HORAS</p></label>
+      <input type="radio" name="time" value="2" id="twoDays">
+      <label for="twoDays" class="searchLabels searchLabelsMin flex-item"><p class="numbers">48</p><p class="nText">HORAS</p></label>
+      <input type="radio" name="time" value="7" id="sevenDays">
+      <label for="sevenDays" class="searchLabels searchLabelsMin flex-item"><p class="numbers">7</p><p class="nText">DÍAS</p></label>
+      <input type="radio" name="time" value="30" id="30Days">
+      <label for="30Days" class="searchLabels searchLabelsMin flex-item"><p class="numbers">30</p><p class="nText">DÍAS</p></label>
+    </div>
+
+
+  </form>
+</div>
