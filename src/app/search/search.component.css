@@ -14,7 +14,7 @@ body {
     margin-top:50px;
     font-size:2em;
     color:#949494;
-
+    font-weight:300;
     padding:0 0 10px 65px;
     background-image: linear-gradient(to right, #3183CC 3px, transparent 2px);
     background-repeat: repeat-x;
