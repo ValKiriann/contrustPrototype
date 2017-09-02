@@ -1,0 +1,202 @@
+.container {
+    height:100vh;
+    overflow:scroll;
+    /* Background: */
+    background-image: linear-gradient(-180deg, #407CC9 0%, #2B2B2B 100%);
+}
+.container2 {
+    background-image: radial-gradient(circle at center, #407CC9 20%, #153D4C 100%);
+}
+.container3 {
+    background-color:white;
+    background-image:inherit;
+    overflow: scroll;
+    height:calc(100vh - 96px);
+}
+body {
+    color:#2b2b2b;
+}
+* {
+    white-space: nowrap;
+}
+.center {
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+.termInput {
+    margin:0 auto;
+    width:60vw;
+    margin-top:50px;
+    font-size:2em;
+    color:#ffffff;
+    font-weight:300;
+    padding:0 0 10px 80px;
+    background-image: linear-gradient(to right, #3183CC 3px, transparent 2px);
+    background-repeat: repeat-x;
+    background-size: 100% 30%;
+    background-position: -1px bottom;
+    border: none;
+    border-bottom: 2px solid #3183CC;
+    text-align: left;
+    background-color:transparent;
+    letter-spacing: 1px;
+}
+.formICon {
+    position: relative;
+    z-index: 1;
+    left: 35px;
+    top: 0px;
+    color: #ffffff;
+    width: 0;
+    font-size:2.5em;
+    padding: 5px 0;
+}
+input[type="submit"], .buttonBack {
+    width:60vw;
+    border:1px solid white;
+    padding:20px 0;
+    font-size:2.4em;
+    color:white;
+    border-radius:10px;
+    text-align: center;
+    background-color:transparent;
+    font-weight:300;
+    margin: 35px 0;
+    letter-spacing: 1px;
+}
+.flex-containerOptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+    width:60vw;
+    color:white;
+}
+.flex-containerOptions div a{
+    color:white;
+    font-weight: 300;
+    font-size:1.4em;
+    letter-spacing: 1px;
+}
+.lined {
+    text-decoration: underline;
+}
+.fixedIcon {
+    position: fixed;
+    color:white;
+    font-size:2.6em;
+    top:0;
+    left:0;
+    padding:30px 15px;
+}
+.textLogin {
+    color:white;
+    font-size:2.2em;
+    font-weight: 300;
+    width:60%;
+    white-space: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom:40px;
+}
+.black {
+    color:#2b2b2b;
+    width:80vw;
+    margin:0;
+}
+.title {
+    margin-top:3vh;
+    padding-bottom:6vh;
+    border-bottom: 3px solid #407CC9;
+    width:85vw
+}
+.flex-containerList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
+}
+.checkboxRow {
+    height:90px;
+    vertical-align: middle;
+    color:#2b2b2b;
+    font-size:1.7em;
+    border-bottom: 2px solid #8EBBE2;
+    margin: 0 5vw 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: left;
+    width:85vw;
+    border-top:none;
+}
+.checkboxRow label{
+    float:left;
+    text-align: left;
+    width:95%;
+    font-weight:300;
+
+}
+.flex-item-list{
+    min-height:96px;
+}
+.flex-item-list:last-of-type {
+    border-bottom:none;
+}
+.skip {
+    position: fixed;
+    bottom:0;
+    left:0;
+    height:96px;
+    background-color: #407CC9;
+    color:white;
+    width:100vw;
+}
+.flex-containerMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.flex-containerMenu a {
+    width: 50vw;
+    color:white;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding:10px 0;
+}
+.flex-containerMenu a:first-of-type {
+    border-right:1px solid white;
+}
+.title2 {
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:0;
+    border-bottom:none;
+}
+.termInputLight {
+    color:#999999;
+    padding-left:5vw;
+    width:85vw;
+}

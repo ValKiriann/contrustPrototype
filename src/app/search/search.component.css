@@ -147,3 +147,10 @@ input[type="submit"] {
     margin-right:3vw;
     margin-left: 6.5vw;
 }
+.flex-item-list{
+    min-height:96px;
+}
+.flex-item-list:nth-last-of-type{
+    min-height:96px;
+    border-bottom:none;
+}
