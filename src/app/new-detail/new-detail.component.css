@@ -1,0 +1,114 @@
+body {
+    color:#2b2b2b;
+}
+* {
+    white-space: nowrap;
+}
+.container {
+    height:calc(100vh - 192px);
+    overflow:scroll;
+}
+h1 {
+    white-space: normal;
+    text-align: center;
+    margin-top:50px;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.percentage {
+    margin: 40px 15px;
+}
+.percentage img{
+    display: block;
+}
+.percentage p {
+    text-align:center;
+    margin-top:5px;
+    font-size:0.8em;
+}
+.abstract {
+    white-space: normal;
+    text-align: center;
+    font-size:1.8em;
+    width:90%;
+    margin: 0 auto 20px;
+    font-weight:300;
+}
+.dataRow {
+    min-height:96px;
+    vertical-align: middle;
+    color:#2b2b2b;
+    font-size: 1.6em;
+    border-bottom: 2px solid #8EBBE2;
+    margin: 0 3vw;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+div .dataRow:nth-child(4){
+    border-top:2px solid #8EBBE2;  margin-top:50px;
+}
+i {
+    font-size: 1.5em;
+    vertical-align: middle;
+    padding:0 1.5vw 0 1.5vw;
+}
+.fa-times {
+    color:#FF931E;
+}
+.flex-item {
+    flex:1 1 auto;
+    text-align:left;
+}
+.dataRow img {
+    margin:0 5px;
+}
+.buttonBack {
+    width:60vw;
+    border:1px solid #2b2b2b;
+    padding:20px 0;
+    font-size:2.4em;
+    color:#2b2b2b;
+    border-radius:10px;
+    text-align: center;
+    background-color:transparent;
+    font-weight:300;
+    margin: 35px auto;
+    letter-spacing: 1px;
+}
+input[type="radio"]{
+    display:none;
+}
+.flex-container i {
+    font-size:6em;
+    margin:0 5px;
+}
+.iconLabel {
+    vert-align: middle;
+}
+.flex-container p {
+    text-align: center;
+    white-space: normal;
+    max-width:100px;
+}
+.mT {
+   margin-top: 50px;
+}
+.fa-thumbs-up {
+    color:#FF931E;
+}
+.fa-thumbs-down, .fa-meh-o, .fa-ban {
+    color:#407CC9;
+}
