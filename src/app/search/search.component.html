@@ -1,9 +1,10 @@
 <div class="container">
-  <form action="">
+  <form action="" id="searchForm" action="" method="POST">
     <div class="row center">
       <i id="searchICon" class="fa fa-search"></i><input type="text" class="termInput" placeholder="Buscar una noticia">
     </div>
     <span for="gps" class="searchLabels">¿Dónde?</span>
+    <!-- ng map gps pretty cool functionality please -->
     <div class="row center">
       <img src="../assets/img/gpsMap.png" alt="" class="center" width="90%">
     </div>
@@ -18,7 +19,33 @@
       <input type="radio" name="time" value="30" id="30Days">
       <label for="30Days" class="searchLabels searchLabelsMin flex-item"><p class="numbers">30</p><p class="nText">DÍAS</p></label>
     </div>
+    <div class="row dataRow">
+      <label for="categories" >Temática</label>
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <!-- On click all the component should move to the left and display the select options of the categories
 
+      <div class="row checkboxRow infoRow">
+        <i class="fa fa-list" aria-hidden="true"></i>
+        <label>Elige las temáticas sobre las que buscar</label>
+      </div>
+      <div class="row checkboxRow">
+        <label for="politica" >Política</label>
+        <input type="checkbox" name="categorie" value="1" id="politica">
+      </div>
+      <div class="row checkboxRow">
+        <label for="religion" >Religión</label>
+        <input type="checkbox" name="categorie" value="2" id="religion">
+      </div>
 
+          ETC
+
+          AND TO GO BACK: back button from android or helper??!?!
+      -->
+
+    </div>
+    <div class="row buttonsRow">
+      <input type="reset" value="Reiniciar filtros">
+      <input type="submit" value="BUSCAR">
+    </div>
   </form>
 </div>
