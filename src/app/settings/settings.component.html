@@ -1,3 +1,31 @@
-<p>
-  settings works!
-</p>
+<div class="container">
+  <div class="row flex-container">
+    <div class="flex-item">
+      <img src="../assets/img/profilePhoto.png" alt="" class="profilePicture">
+    </div>
+    <div class="flex-item">
+      <!-- ng for  we have to take this data from a database, put them like a placeholder and change it dinamically and bidirectionally -->
+      <input type="text" class="termInput" value="Ana">
+      <input type="text" class="termInput" value="Enríquez Alonso-Villalobos">
+    </div>
+  </div>
+  <span class="searchLabels">Sexo</span>
+  <div class="row flex-container flexButtons">
+    <input type="radio" name="time" value="1" id="aDay" checked>
+    <label for="aDay" class="genderButtons flex-item">Mujer</label>
+    <input type="radio" name="time" value="2" id="twoDays">
+    <label for="twoDays" class="genderButtons flex-item">Hombre</label>
+  </div>
+  <span class="searchLabels">Fecha de nacimiento</span>
+  <!-- how to force towrite here a date in smartphones -->
+  <input type="date" class="termInput inputFull" value="22-08-1991">
+  <span class="searchLabels">E-mail</span>
+  <input type="email" class="termInput inputFull" value="ann_eav@hotmail.com">
+  <span class="searchLabels">Contraseña</span>
+  <input type="password" class="termInput inputFull" value="hahahaquepassword">
+  <!-- This has to do something like the categorie search tab but with the checked categories and dinamically changed in the database -->
+  <div class="row dataRow">
+    <label for="categories" >Mis categorías favoritas</label>
+    <i class="fa fa-angle-right" aria-hidden="true"></i>
+  </div>
+</div>
