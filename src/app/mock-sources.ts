@@ -1,9 +1,7 @@
 import { Source } from './source';
 
 export const SOURCES: Source[] = [
-  {id: 91, title: 'Fuente 1'},
-  {id: 92, title: 'Fuente 2'},
-  {id: 93, title: 'Fuente 3'},
-  {id: 94, title: 'Fuente 4'},
-  {id: 95, title: 'Fuente 5'}
+  {id: 21, name: 'Source 1', url: 'http://www.sourceTrue.com', truth: 80.3},
+  {id: 22, name: 'Source 2', url: 'http://www.sourceNeutral.com', truth: 50},
+  {id: 23, name: 'Source 3', url: 'http://www.sourceFake.com', truth: 20.6}
 ];

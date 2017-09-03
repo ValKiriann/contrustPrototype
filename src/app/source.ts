@@ -1,4 +1,6 @@
 export class Source {
   id: number;
-  title: string;
+  name: string;
+  url: string;
+  truth: number;
 }
