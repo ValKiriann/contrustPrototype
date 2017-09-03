@@ -11,7 +11,7 @@ import { StoredComponent } from './stored/stored.component';
 import { PersonalComponent } from './personal/personal.component';
 import { SearchComponent } from './search/search.component';
 import { SettingsComponent } from './settings/settings.component';
-import { NewDetailComponent } from './new-detail/new-detail.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { PrimaryMenuComponent } from './primary-menu/primary-menu.component';
 import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.component';
 
@@ -28,7 +28,7 @@ import { AlertModule } from 'ngx-bootstrap';
     PersonalComponent,
     SearchComponent,
     SettingsComponent,
-    NewDetailComponent,
+    NewsDetailComponent,
     PrimaryMenuComponent,
     SecondaryMenuComponent
   ],

@@ -7,7 +7,7 @@ import { StoredComponent } from './stored/stored.component';
 import { PersonalComponent } from './personal/personal.component';
 import { SearchComponent } from './search/search.component';
 import { SettingsComponent } from './settings/settings.component';
-import { NewDetailComponent } from './new-detail/new-detail.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/session', pathMatch: 'full' },
@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'stored', component: StoredComponent },
   { path: 'personal', component: PersonalComponent },
   { path: 'search', component: SearchComponent },
-  { path: 'new-detail/:id', component: NewDetailComponent },
+  { path: 'new-detail/:id', component: NewsDetailComponent },
   { path: 'settings', component: SettingsComponent }
 ];
 

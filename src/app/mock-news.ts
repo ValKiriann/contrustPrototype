@@ -1,14 +1,9 @@
-import { New } from './new';
+import { News } from './news';
 
-export const NEWS: New[] = [
-  {id: 11, title: 'Noticia 1'},
-  {id: 12, title: 'Noticia 2'},
-  {id: 13, title: 'Noticia 3'},
-  {id: 14, title: 'Noticia 4'},
-  {id: 15, title: 'Noticia 5'},
-  {id: 16, title: 'Noticia 6'},
-  {id: 17, title: 'Noticia 7'},
-  {id: 18, title: 'Noticia 8'},
-  {id: 19, title: 'Noticia 9'},
-  {id: 20, title: 'Noticia 10'}
+export const NEWS: News[] = [
+  new News(11, 'News 1', 'Excerpt 1', 'Content 1'),
+  new News(12, 'News 2', 'Excerpt 2', 'Content 2'),
+  new News(13, 'News 3', 'Excerpt 3', 'Content 3'),
+  new News(14, 'News 4', 'Excerpt 4', 'Content 4'),
+  new News(15, 'News 5', 'Excerpt 5', 'Content 5')
 ];

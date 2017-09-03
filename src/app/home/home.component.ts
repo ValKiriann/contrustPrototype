@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ListBuilderService } from '../list-builder.service';
 
-import { New } from '../new';
+import { News } from '../news';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +14,7 @@ import { New } from '../new';
 })
 export class HomeComponent implements OnInit {
 
-  news: New[] = [];
+  news: News[] = [];
 
   constructor(private listBuilderService: ListBuilderService) { }
 

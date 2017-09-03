@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { New } from './new';
+import { News } from './news';
 import { Source } from './source';
 
 import { NEWS } from './mock-news';
@@ -11,12 +11,12 @@ export class ListBuilderService {
 
   constructor() { }
 
-  getNews(): Promise<New[]> {
+  getNews(): Promise<News[]> {
     return Promise.resolve(NEWS);
   }
 
-  getSources(): Source[] {
-    return SOURCES;
+  getSources(): Promise<Source[]> {
+    return Promise.resolve(SOURCES);
   }
 
 }
