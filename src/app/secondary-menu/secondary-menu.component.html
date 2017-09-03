@@ -4,7 +4,10 @@
   </div>
   <div class="flex-item">
     <ul class="">
-      <li class="selected" >Top Hoy</li><li><a href="">Sociedad</a></li><li><a href="">Política</a></li><li><a href="">Economía</a></li>
+      <li *ngFor="let tag of tags; let first=first">
+        <span *ngIf="first" class="selected">{{tag.name}}</span>
+        <a href="" *ngIf="!first">{{tag.name}}</a>
+      </li>
     </ul>
   </div>
 </div>

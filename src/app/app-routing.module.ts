@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/session', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'stored', component: StoredComponent },
+  { path: 'stored', component: StoredComponent },
   { path: 'personal', component: PersonalComponent },
   { path: 'search', component: SearchComponent },
   { path: 'new-detail/:id', component: NewsDetailComponent },
