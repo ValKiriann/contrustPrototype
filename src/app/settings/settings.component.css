@@ -5,16 +5,18 @@ body {
     white-space: nowrap;
 }
 .container {
-    height:calc(100vh - 192px);
-    overflow:scroll;
+    height:calc(1280px - 192px);
+    overflow-y:scroll;
+    overflow-x:hidden;
+    max-width:720px;
 }
 .termInput {
     margin:0 auto;
     width:100%;
     font-size:2em;
     color:#949494;
-    padding:0 0 10px 2vw;
-    background-image: linear-gradient(to right, #3183CC 3px, transparent 2px);
+    padding:0 0 10px 5%;
+    background-image: linear-gradient(to right, #3183CC 4px, transparent 2px);
     background-repeat: repeat-x;
     background-size: 100% 30%;
     background-position: -1px bottom;
@@ -38,7 +40,7 @@ body {
 }
 .searchLabels {
     display:block;
-    padding-left:5vw;
+    padding-left:5%;
     margin:45px 0;
     font-size:2em;
     font-weight:300;
@@ -73,8 +75,8 @@ input[type="radio"]:checked+label{
     padding-top:0;
 }
 .inputFull {
-    margin-left:5vw;
-    width:85vw;
+    margin-left:5%;
+    width:85%;
 }
 .dataRow{
     height:90px;
@@ -83,12 +85,12 @@ input[type="radio"]:checked+label{
     font-size:1.7em;
     border-top: 2px solid #8EBBE2;
     border-bottom: 2px solid #8EBBE2;
-    margin: 70px 5vw 0;
+    margin: 70px 5% 0;
     display: flex;
     flex-flow: row;
     align-items: center;
     text-align: left;
-    width:85vw;
+    width:85%;
 }
 .dataRow label{
     float:left;

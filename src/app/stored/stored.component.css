@@ -8,8 +8,10 @@ body {
   text-align:center;
 }
 .container {
-  height:calc(100vh - 192px);
-  overflow:scroll;
+  height:calc(1280px - 192px);
+  overflow-y:scroll;
+  max-width:720px;
+  overflow-x:hidden;
 }
 .dataRow {
   height:96px;
@@ -17,7 +19,7 @@ body {
   color:#2b2b2b;
   font-size: 22px;
   border-bottom: 2px solid #8EBBE2;
-  margin: 0 3vw;
+  margin: 0 3%;
   display: flex;
   text-align: left;
   white-space: normal;
@@ -34,12 +36,12 @@ p {
 i {
   font-size: 1.5em;
   vertical-align: middle;
-  padding:0 1.5vw 0 0;
+  padding:0 1.5% 0 0;
 }
 i:last-child {
   margin-top:7px;
   font-size: 1.5em;
-  padding-left:3vw;
+  padding-left:3%;
   vertical-align: top;
 }
 .fa-times {

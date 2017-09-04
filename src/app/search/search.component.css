@@ -5,8 +5,10 @@ body {
     white-space: nowrap;
 }
 .container {
-    height:calc(100vh - 192px);
-    overflow:scroll;
+  height:calc(1280px - 192px);
+  overflow-y:scroll;
+  max-width:720px;
+  overflow-x:hidden;
 }
 .termInput {
     margin:0 auto;
@@ -40,7 +42,7 @@ body {
 }
 .searchLabels {
     display:block;
-    padding-left:5vw;
+    padding-left:5%;
     margin:45px 0;
     font-size:2em;
     font-weight:300;
@@ -68,7 +70,7 @@ input[type="radio"]:checked+label{
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
-    padding: 0 5vw;
+    padding: 0 5%;
     margin:0;
 }
 .numbers {
@@ -90,12 +92,12 @@ input[type="radio"]:checked+label{
     font-size:1.7em;
     border-top: 2px solid #8EBBE2;
     border-bottom: 2px solid #8EBBE2;
-    margin: 70px 5vw 0;
+    margin: 70px 5% 0;
     display: flex;
     flex-flow: row;
     align-items: center;
     text-align: left;
-    width:85vw;
+    width:85%;
 }
 .checkboxRow {
     border-top:none;
@@ -114,7 +116,7 @@ input[type="radio"]:checked+label{
 }
 
 .buttonsRow {
-    margin: 70px auto;
+    margin: 50px auto;
     text-align: center;
 }
 input[type="reset"], input[type="submit"] {
