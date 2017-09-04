@@ -1,8 +1,9 @@
 .container {
-    height:100vh;
-    overflow:scroll;
+    height:1280px;
+    overflow:hidden;
     /* Background: */
     background-image: linear-gradient(-180deg, #407CC9 0%, #2B2B2B 100%);
+    max-width:720px;
 }
 .container2 {
     background-image: radial-gradient(circle at center, #407CC9 20%, #153D4C 100%);
@@ -38,7 +39,7 @@ body {
 }
 .termInput {
     margin:0 auto;
-    width:60vw;
+    width:100%;
     margin-top:50px;
     font-size:2em;
     color:#ffffff;
@@ -64,10 +65,10 @@ body {
     font-size:2.5em;
     padding: 5px 0;
 }
-input[type="submit"], .buttonBack {
-    width:60vw;
+input[type="submit"], .buttonBack, .submit {
+    min-width:398px;
     border:1px solid white;
-    padding:20px 0;
+    padding:20px 135px;
     font-size:2.4em;
     color:white;
     border-radius:10px;
@@ -84,8 +85,9 @@ input[type="submit"], .buttonBack {
     justify-content: space-between;
     align-content: stretch;
     align-items: flex-start;
-    width:60vw;
+    width:60%;
     color:white;
+    margin-top:50px;
 }
 .flex-containerOptions div a{
     color:white;
