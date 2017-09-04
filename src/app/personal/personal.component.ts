@@ -12,13 +12,13 @@ import { News } from '../news';
 })
 export class PersonalComponent implements OnInit {
 
-  news: News[] = [];
+  newsPersonal: News[] = [];
 
   constructor(private listBuilderService: ListBuilderService) { }
 
   ngOnInit(): void {
-    this.listBuilderService.getNews()
-      .then(news => this.news = news.slice(0, 10));
+    this.listBuilderService.getNewsPersonal()
+      .then(newsPersonal => this.newsPersonal = newsPersonal.slice(0, 10));
   }
 
 }
