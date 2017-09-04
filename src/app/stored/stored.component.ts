@@ -13,6 +13,8 @@ import { Search } from '../search';
 })
 export class StoredComponent implements OnInit {
 
+  public storedItems: number = 1;
+
   newsStored: News[] = [];
   searches: Search[] = [];
 
@@ -23,6 +25,10 @@ export class StoredComponent implements OnInit {
       .then(newsStored => this.newsStored = newsStored.slice(0, 5));
     this.listBuilderService.getSearches()
       .then(searches => this.searches = searches.slice(0, 3));
+  }
+
+  changeView(theView: number): void {
+    this.storedItems = theView;
   }
 
 }

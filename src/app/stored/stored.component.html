@@ -2,24 +2,26 @@
 
 <div class="container">
   <div class="row flex-container flexButtons">
-    <input type="radio" [(ngModel)]="storedItems" name="storedItems" value="storedNews" id="storedNews" checked>
+    <input type="radio" [(ngModel)]="storedItems" (click)="changeView(2)" name="storedItems" [value]="1" id="storedNews">
     <label for="storedNews" class="filterButtons flex-item">Noticias</label>
-    <input type="radio" [(ngModel)]="storedItems" name="storedItems" value="storedSearches" id="storedSearches">
+    <input type="radio" [(ngModel)]="storedItems" (click)="changeView(1)" name="storedItems" [value]="2" id="storedSearches">
     <label for="storedSearches" class="filterButtons flex-item">Búsquedas</label>
   </div>
 
-  <div *ngIf="storedItems == 'storedNews'">
+  <div *ngIf="storedItems == 1">
     <div *ngFor="let aNewsStored of newsStored" class="row dataRow">
       <div>
         <span>{{aNewsStored.title}}</span>
       </div>
       <div class="icons">
-        <i class="fa fa-times" aria-hidden="true"></i><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+        <img src="../assets/img/percentage.png" alt="">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
       </div>
     </div>
   </div>
 
-  <div *ngIf="storedItems == 'storedSearches'">
+  <div *ngIf="storedItems == 2">
     <div *ngFor="let search of searches" class="row dataRow">
       <div class="col-xs-12">
         <span>{{search.keywords}}</span>
