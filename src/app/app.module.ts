@@ -12,15 +12,17 @@ import { PersonalComponent } from './personal/personal.component';
 import { SearchComponent } from './search/search.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { NewsDetailEasyReadComponent } from './news-detail-easy-read/news-detail-easy-read.component';
+
 import { PrimaryMenuComponent } from './primary-menu/primary-menu.component';
 import { SecondaryMenuComponent } from './secondary-menu/secondary-menu.component';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AlertModule } from 'ngx-bootstrap';
 import { SecondaryMenuPersonalComponent } from './secondary-menu-personal/secondary-menu-personal.component';
 import { SecondaryMenuStoredComponent } from './secondary-menu-stored/secondary-menu-stored.component';
 import { SecondaryMenuSettingsComponent } from './secondary-menu-settings/secondary-menu-settings.component';
 import { SecondaryMenuSearchComponent } from './secondary-menu-search/secondary-menu-search.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { SecondaryMenuSearchComponent } from './secondary-menu-search/secondary-
     SearchComponent,
     SettingsComponent,
     NewsDetailComponent,
+    NewsDetailEasyReadComponent,
     PrimaryMenuComponent,
     SecondaryMenuComponent,
     SecondaryMenuPersonalComponent,

@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>{{news.title}}</h1>
+  <div class="flex-container">
+    <div class="percentage">
+      <img src="../assets/img/percentageDetail.png" alt=""><p>FUENTES</p>
+    </div>
+    <div class="percentage">
+      <img src="../assets/img/percentageDetail.png" alt=""><p>COMUNIDAD</p>
+    </div>
+    <!-- <div class="percentage">
+      <img src="../assets/img/percentageDetail.png" alt=""><p>TONO</p>
+    </div>
+    <div class="percentage">
+      <img src="../assets/img/percentageDetail.png" alt=""><p>HECHOS</p>
+    </div> -->
+  </div>
+
+  <div>
+    <p class="abstract">{{news.content}}</p>
+  </div>
+
+  <div class="center">
+    <!-- <a href="{{source.url}}"><button class="btn btn-default buttonBack" value="iframe">Ir a {{source.name}}</button></a> -->
+    <a href="http://www.elpais.com"><button class="btn btn-default buttonBack" value="iframe">Ir a elpais</button></a> <!-- TODO: Hardcoded value -->
+  </div>
+  <h1>Verifica esta noticia</h1>
+
+  <div class="flex-container mT">
+    <form action="">
+      <input type="radio" name="time" value="1" id="aDay">
+      <label for="aDay" class="iconLabel"><i class="fa fa-thumbs-up" aria-hidden="true"></i><p>Verdadera</p></label>
+      <input type="radio" name="time" value="2" id="twoDays">
+      <label for="twoDays" class="iconLabel"><i class="fa fa-thumbs-down" aria-hidden="true"></i><p>Falsa</p></label>
+      <input type="radio" name="time" value="7" id="sevenDays">
+      <label for="sevenDays" class="iconLabel"><i class="fa fa-meh-o" aria-hidden="true"></i><p>No estoy seguro</p></label>
+      <input type="radio" name="time" value="30" id="30Days">
+      <label for="30Days" class="iconLabel"><i class="fa fa-ban" aria-hidden="true"></i><p>Fuente errónea</p></label>
+    </form>
+  </div>
+
+  <button (click)="goBack()">Back</button>
+</div>

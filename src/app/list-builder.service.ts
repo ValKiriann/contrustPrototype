@@ -43,6 +43,11 @@ export class ListBuilderService {
       .then(news => news.find(news => news.id === id));
   }
 
+  // TODO
+  // getNewsDetailBySource(idNews: number, idSource: number): Promise<News> {
+  //   ...
+  // }
+
   getSources(): Promise<Source[]> {
     return Promise.resolve(SOURCES);
   }

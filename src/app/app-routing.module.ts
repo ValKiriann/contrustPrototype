@@ -8,6 +8,7 @@ import { PersonalComponent } from './personal/personal.component';
 import { SearchComponent } from './search/search.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { NewsDetailEasyReadComponent } from './news-detail-easy-read/news-detail-easy-read.component';
 
 const routes: Routes = [
   { path: '.', redirectTo: '/session', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'personal', component: PersonalComponent },
   { path: 'search', component: SearchComponent },
   { path: 'news-detail/:id', component: NewsDetailComponent },
+  { path: 'news-detail-easy-read/:id', component: NewsDetailEasyReadComponent },
   { path: 'settings', component: SettingsComponent }
 ];
 
