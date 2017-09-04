@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { MainComponent } from './main/main.component';
 import { SessionComponent } from './session/session.component';
 import { HomeComponent } from './home/home.component';
 import { StoredComponent } from './stored/stored.component';
@@ -11,8 +12,10 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { NewsDetailEasyReadComponent } from './news-detail-easy-read/news-detail-easy-read.component';
 
 const routes: Routes = [
-  { path: '.', redirectTo: '/session', pathMatch: 'full' },
+  { path: '', redirectTo: '/session', pathMatch: 'full' },
+    { path: 'session', component: SessionComponent },
   { path: 'home', component: HomeComponent },
+    { path:'main', component: MainComponent},
   { path: 'stored', component: StoredComponent },
   { path: 'personal', component: PersonalComponent },
   { path: 'search', component: SearchComponent },

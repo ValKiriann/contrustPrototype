@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.listBuilderService.getNews()
-      .then(news => this.news = news.slice(0, 10));
+      .then(news => this.news = news.slice(0, 15));
   }
 
   onSelect(news: News): void {

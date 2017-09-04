@@ -20,9 +20,11 @@ import { SecondaryMenuPersonalComponent } from './secondary-menu-personal/second
 import { SecondaryMenuStoredComponent } from './secondary-menu-stored/secondary-menu-stored.component';
 import { SecondaryMenuSettingsComponent } from './secondary-menu-settings/secondary-menu-settings.component';
 import { SecondaryMenuSearchComponent } from './secondary-menu-search/secondary-menu-search.component';
+import { SecondayMenuNdetailComponent } from './seconday-menu-ndetail/seconday-menu-ndetail.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AlertModule } from 'ngx-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { AlertModule } from 'ngx-bootstrap';
     SecondaryMenuPersonalComponent,
     SecondaryMenuStoredComponent,
     SecondaryMenuSettingsComponent,
-    SecondaryMenuSearchComponent
+    SecondaryMenuSearchComponent,
+    SecondayMenuNdetailComponent
   ],
   imports: [
     AlertModule.forRoot(),
