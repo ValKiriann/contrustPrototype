@@ -38,6 +38,11 @@ export class ListBuilderService {
     return Promise.resolve(NEWSSTORED);
   }
 
+  getNewsDetail(id: number): Promise<News> {
+    return this.getNews()
+      .then(news => news.find(news => news.id === id));
+  }
+
   getSources(): Promise<Source[]> {
     return Promise.resolve(SOURCES);
   }
