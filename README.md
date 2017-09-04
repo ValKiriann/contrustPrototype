@@ -1,4 +1,5 @@
 ![Logo](http://contrust.anaenriquez.es/wp-content/uploads/sites/7/2017/05/logo2-1.png)
+![licenciaCC](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 Este proyecto ha sido desarrollado con Angular framework
 
