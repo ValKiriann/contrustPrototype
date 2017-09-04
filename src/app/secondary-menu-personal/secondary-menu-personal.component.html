@@ -1,0 +1,13 @@
+<div class="flex-container">
+  <div class="flex-item">
+    <img src="../assets/img/logoMenu.png" alt="" class="logoAux">
+  </div>
+  <div class="flex-item">
+    <ul class="">
+      <li *ngFor="let tagPersonal of tagsPersonal; let first=first">
+        <span *ngIf="first" class="selected">{{tagPersonal.name}}</span>
+        <a href="" *ngIf="!first">{{tagPersonal.name}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

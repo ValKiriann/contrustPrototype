@@ -13,14 +13,14 @@ import { Search } from '../search';
 })
 export class StoredComponent implements OnInit {
 
-  news: News[] = [];
+  newsStored: News[] = [];
   searches: Search[] = [];
 
   constructor(private listBuilderService: ListBuilderService) { }
 
   ngOnInit(): void {
-    this.listBuilderService.getNews()
-      .then(news => this.news = news.slice(0, 5));
+    this.listBuilderService.getNewsStored()
+      .then(newsStored => this.newsStored = newsStored.slice(0, 5));
     this.listBuilderService.getSearches()
       .then(searches => this.searches = searches.slice(0, 3));
   }

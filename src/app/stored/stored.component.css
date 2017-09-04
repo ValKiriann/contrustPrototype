@@ -11,33 +11,6 @@ body {
   height:calc(100vh - 192px);
   overflow:scroll;
 }
-.dataRow {
-  height:96px;
-  vertical-align: middle;
-  color:#2b2b2b;
-  font-size: 28px;
-  border-bottom: 2px solid #8EBBE2;
-  margin: 0 3vw;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-}
-i {
-  font-size: 1.5em;
-  vertical-align: middle;
-  padding:0 1.5vw 0 0;
-}
-i:last-child {
-  margin-top:7px;
-  font-size: 1.5em;
-  padding-left:3vw;
-  vertical-align: top;
-}
-.fa-times {
-  color:#FF931E;
-}
 .flex-container {
     display: flex;
     padding:50px 0;
@@ -72,4 +45,31 @@ input[type="radio"]:checked+label{
 .flexButtons {
     justify-content: center;
     padding-top:0;
+}
+.dataRow {
+  height:96px;
+  vertical-align: middle;
+  color:#2b2b2b;
+  font-size: 28px;
+  border-bottom: 2px solid #8EBBE2;
+  margin: 0 3vw;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+i {
+  font-size: 1.5em;
+  vertical-align: middle;
+  padding:0 1.5vw 0 0;
+}
+i:last-child {
+  margin-top:7px;
+  font-size: 1.5em;
+  padding-left:3vw;
+  vertical-align: top;
+}
+.fa-times {
+  color:#FF931E;
 }
