@@ -53,3 +53,13 @@ a:hover {
   border-right: none;
 
 }
+.fa {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #407CC9;
+  color: transparent;
+}
+.active .fa{
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: transparent;
+  color: #407CC9;
+}

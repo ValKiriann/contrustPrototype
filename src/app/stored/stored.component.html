@@ -10,13 +10,11 @@
 
   <div *ngIf="storedItems == 'storedNews'">
     <div *ngFor="let aNewsStored of newsStored" class="row dataRow">
-      <div class="col-xs-9">
+      <div>
         <span>{{aNewsStored.title}}</span>
       </div>
-      <div class="col-xs-3 center">
-        <i class="fa fa-times" aria-hidden="true"></i>
-        <img src="../assets/img/percentage.png" alt="">
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <div class="icons">
+        <i class="fa fa-times" aria-hidden="true"></i><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
       </div>
     </div>
   </div>
