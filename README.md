@@ -42,7 +42,7 @@ Puedes consultar el Libro de la marca en [Issuu](https://issuu.com/anaannkitoenr
 
 Puedes consultar la landing page en [http://contrust.anaenriquez.es](http://contrust.anaenriquez.es)
 
-También puedes ver nuestro [spot](https://www.youtube.com/watch?v=38NwmIPFDFM) o nuestro [speech promocional]()
+También puedes ver nuestro [spot](https://www.youtube.com/watch?v=38NwmIPFDFM) o nuestro [speech promocional](https://youtu.be/B4-gg6vgCvE)
 
 
 
