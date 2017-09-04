@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>TITULAR EN PRIMERA PLANA FUNDAMENTAL Y PRECISO</h1>
+  <h1>{{news.title}}</h1>
   <div class="flex-container">
     <div class="percentage">
-      <img src="../assets/img/percentageDetail.png" alt=""><p>FUENTE</p>
+      <img src="../assets/img/percentageDetail.png" alt=""><p>FUENTES</p>
     </div>
     <div class="percentage">
       <img src="../assets/img/percentageDetail.png" alt=""><p>COMUNIDAD</p>
@@ -15,49 +15,21 @@
     </div> -->
   </div>
 
-  <!-- THIS CHANGES BETWEEN DETAIL AND EASY READ MODE -->
-
-  <!--
   <div>
-    <p class="abstract">Pequeño resumen extraído del top 1 de fuentes para poder ofrecer una lectura inicial de la información de la noticia y así contarte cositas bonitas para que tu elijas si el tema te interesa o sudas de seguir leyendo y te pasas a otra cosa…</p>
+    <p class="abstract">{{news.excerpt}}</p>
   </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
+
+  <div *ngFor="let source of sources" class="row dataRow">
+    <p class="flex-item">{{source.url}}</p>
+    <img src="../assets/img/percentage.png" alt="">
+    <img src="../assets/img/percentage.png" alt="">
+    <img src="../assets/img/percentage.png" alt="">
+    <img src="../assets/img/percentage.png" alt="">
+    <!-- <a [routerLink]="['/news-detail-easy-read', news.id, source.id]" ><i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+    <a [routerLink]="['/news-detail-easy-read', 11]" ><i class="fa fa-angle-right" aria-hidden="true"></i></a> <!-- TODO: Hardcoded value -->
   </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-  <p class="flex-item">http://www.elpais.com</p>
-  <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
-  <div class="row dataRow">
-    <p class="flex-item">http://www.elpais.com</p>
-    <img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><img src="../assets/img/percentage.png" alt=""><i class="fa fa-angle-right" aria-hidden="true"></i>
-  </div>
--->
+
+  <!-- 
   <p class="abstract">Alicante, Barcelona, Cáceres, Cartagena, Ciudad Real, Las Palmas de Gran Canaria, León, Madrid, Murcia, Valencia, Salamanca, Sevilla, Valladolid y Vigo serán las catorce sedes físicas de la quinta edición de HackForGood, un hackathon que desde cada año reune a cientos de desarrolladores para construir aplicaciones y servicios que hagan un uso masivo de datos y que tengan gran impacto social.</p>
 
   <p class="abstract">Esta nueva edición de HackForGood, que arrancaba este jueves, se celebra durante 3 días de forma simultánea en 23 universidades ubicadas en 14 ciudades españolas. Además, este año cuenta con importantes novedades, como la creación de una sede virtual, desde la que se pueden enviar propuestas online desde cualquier lugar y la posibilidad de que los integrantes de los equipos participantes puedan trabajar desde distintas sedes.</p>
@@ -80,5 +52,7 @@
       <input type="radio" name="time" value="30" id="30Days">
       <label for="30Days" class="iconLabel"><i class="fa fa-ban" aria-hidden="true"></i><p>Fuente errónea</p></label>
     </form>
-  </div>
+  </div> -->
+
+  <button (click)="goBack()">Back</button>
 </div>
